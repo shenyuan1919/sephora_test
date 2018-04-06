@@ -93,7 +93,6 @@ CREATE TABLE IF NOT EXISTS `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `description`, `rating`, `image`, `sold_out`, `category`, `under_sale`, `price`, `sale_price`, `sale_text`) VALUES
-(1, 'KAT VON D', 'Lock-It Foundation', '5.0', 'images/product/s1398858mainLhero.jpg', 0, 'makeup', 0, 5800, 5800, 'N.A.'),
 (2, 'Fresh', 'Nourishing Naturals Lip Duo', '4.2', 'images/product/Fresh_Web.jpg', 1, 'makeup', 0, 4300, 4300, 'N.A.'),
 (3, 'FARSALI', 'Glow On The Go Kit', '3.7', 'images/product/Farsali_WEB.jpg', 0, 'skincare', 0, 7900, 7900, 'N.A.'),
 (4, 'RMS BEAUTY', 'Bronzer', '4.0', 'images/product/Bronzer_Buriti_WEB.jpg', 0, 'makeup', 0, 3800, 3800, 'N.A.'),

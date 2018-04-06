@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Buy Makeup, Cosmetics and Skincare | Sephora Singapore</title>
 	<meta content='Sephora, where beauty beats. Discover the best in makeup, skin care, and more from a wide selection of beauty brands. Free shipping for orders above S$40.' id='meta-description' name='description'>
 	<meta content='Sephora,Singapore,Beauty,Cosmetics,SkinCare,FreeDelivery' id='meta-keywords' name='keywords'>
-	
+
 	<link rel="stylesheet" href="<?php echo base_url(); ?>css/foundation.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>css/app.css">
 
@@ -53,17 +53,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<input type="radio" class="priceRange" name="priceRange" value="0_2400" id="0_2400" onchange="searchFilter()" />
 					<label class="choice" for="0_2400">Under $25</label><br />
 				</li>
-				<li>	
+				<li>
 					<input type="radio" class="priceRange" name="priceRange" value="2500_5000" id="2500_5000" onchange="searchFilter()" />
-					<label class="choice" for="2500_5000"> $25 - $50</label><br />				
+					<label class="choice" for="2500_5000"> $25 - $50</label><br />
 				</li>
-				<li>	
+				<li>
 					<input type="radio" class="priceRange" name="priceRange" value="5000_10000" id="5000_10000" onchange="searchFilter()" />
-					<label class="choice" for="5000_10000"> $50 - $100</label><br />				
+					<label class="choice" for="5000_10000"> $50 - $100</label><br />
 				</li>
-				<li>	
+				<li>
 					<input type="radio" class="priceRange" name="priceRange" value="10000_15000" id="10000_15000" onchange="searchFilter()" />
-					<label class="choice" for="10000_15000"> $100 - $150</label><br />				
+					<label class="choice" for="10000_15000"> $100 - $150</label><br />
 				</li>
 				<li>
 					<input type="radio" class="priceRange" name="priceRange" value="15000_max" id="15000_max" onchange="searchFilter()" />
@@ -73,37 +73,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<div class="medium-9 small-6 cell" style="margin-top:20px;">
 			<div class="grid-x grid-padding-x" >
-				<div class="medium-10 small-6 cell">
+				<div class="medium-9 small-6 cell">
 					<label for="middle-label" class="text-right middle sort-label">Sort: </label>
 				</div>
-				<div class="medium-2 small-6 cell">
+				<div class="medium-3 small-6 cell">
 					<select class="sort-option" id="sortBy" onchange="searchFilter()">
 						<option class="form-option sort-option" value="LOW_TO_HIGH">Price: Low to High</option>
 						<option class="form-option sort-option" value="HIGH_TO_LOW">Price: High to Low</option>
 					</select>
 				</div>
 			</div>
-		
+
 			<div class="post-list" id="postList">
 				<div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
 				<?php
 				if(!empty($products)){
 					foreach($products as $product){
 					?>
-						
+
 						<div class="cell" >
 							<a href="<?php echo base_url(); ?>product/detail/<?=$product['id']?>">
 							<div class="callout" style="border: 0px;">
 								<div class="img_container">
 									<img src="<?=APIURL.$product['image']?>" alt="image of <?=$product['name']?>">
-									<?php 
-									if($product['sold_out']){ 
+									<?php
+									if($product['sold_out']){
 										echo "<div class=\"imgtext_centered out-of-stock\">Out Of Stock</div>";
 										echo "<div class=\"bottom-centered waitlist-me hidden\">Waitlist Me</div>	";
 									}else{
 										echo "<div class=\"bottom-centered add-to-bag hidden\">Add To Bag</div>	";
 									}
-									?>												
+									?>
 								</div>
 								<p class="product-name"><?=$product['name']?></p>
 								<p class="product-desc"><?=$product['description']?></p>
@@ -114,7 +114,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<font class="product-sale-text"><?=$product['sale_text']?></font>
 								<?php } else{ ?>
 									<font class="product-price">$<?=number_format($product['price']/100, 2)?></font>
-								<?php }?>									
+								<?php }?>
 								</p>
 
 								<div class="rateit-range" style="width: 60px; height: 12px;">
@@ -123,7 +123,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 							</a>
 						</div>
-						
+
 					<?php
 					}
 				}
@@ -133,7 +133,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<?php
 				}
 				?>
-				
+
 				</div>
 				<?php echo $this->ajax_pagination->create_links(); ?>
 			</div>

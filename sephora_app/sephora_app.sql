@@ -103,6 +103,6 @@ INSERT INTO `product` (`id`, `name`, `description`, `rating`, `image`, `sold_out
 (9, 'HERBIVORE BOTANICALS', 'Coco Rose - Lip Polish', '3.7', 'images/product/Herbivore_Web.jpg', 0, 'skincare', 0, 2800, 2800, 'N.A.'),
 (10, 'SKIN INC', 'Pure UV Protect⁺ 30ml', '5.0', 'images/product/SkinInc_PureUVProtect.jpg', 0, 'makeup', 0, 7200, 7200, 'N.A.'),
 (11, 'DRGL', 'DrGL Sun Protection Mist 60ml', '4.2', 'images/product/DRGL_WEB.jpg', 1, 'makeup', 0, 8800, 8800, 'N.A.'),
-(12, 'SEPHORA COLLECTION', 'Colorful Eyeshadow ', '3.7', 'images/product/SephoraCollection_WEB.jpg', 0, 'skincare', 1, 1700, 1100, '30%'),
-(13, 'BUTTER LONDON', 'Trend Lacquer', '5.0', 'images/product/ButterLondon_WEB.jpg', 0, 'makeup', 1, 1800, 1000, '40%'),
+(12, 'SEPHORA COLLECTION', 'Colorful Eyeshadow ', '3.7', 'images/product/SephoraCollection_WEB.jpg', 0, 'skincare', 1, 1700, 1100, '30% OFF'),
+(13, 'BUTTER LONDON', 'Trend Lacquer', '5.0', 'images/product/ButterLondon_WEB.jpg', 0, 'makeup', 1, 1800, 1000, '33% OFF'),
 (14, 'RITA HAZAN', 'True Color Ultimate Shine Gloss', '4.2', 'images/product/RitaHazan_WEB.jpg', 1, 'hair', 0, 3800, 3800, 'N.A.');

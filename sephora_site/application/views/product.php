@@ -150,6 +150,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     $(document).foundation();
 </script>
 <script>
+$(document).ready(function() {
+  $("a").on("click touchend", function(e) {
+    var el = $(this);
+    var link = el.attr("href");
+    window.location = link;
+  });
+});
 function searchFilter(page_num) {
     page_num = page_num?page_num:0;
 

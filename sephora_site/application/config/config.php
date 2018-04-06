@@ -32,7 +32,7 @@ function __autoload($classname){
 |
 */
 
-$config['base_url'] = 'http://inspirekidsintl.com/sytemp/sephora_site';
+$config['base_url'] = 'http://localhost/sephora_site/';
 
 /*
 |--------------------------------------------------------------------------

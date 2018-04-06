@@ -43,14 +43,6 @@
 	font-weight: 600;
 }
 
-.hidden{ 
-	display: none;
-}
-
-a:hover .hidden{
-	display : block;
-}
-
 .product-info{ 
 	font-weight: 600;
 	text-transform: uppercase;
@@ -222,11 +214,11 @@ input[type=radio]:checked + label {
 }
 
 .product-detail-description {
+	text-transform: capitalize;
 	font-weight: 400;
 	letter-spacing: 0.3px;
 	line-height: 24px;
 	font-size: 16px;
-	text-transform: none;
 }
 
 .product-detail-price{ 
@@ -259,3 +251,13 @@ input[type=radio]:checked + label {
 	display: inline-block;
 	margin-right: 5px;
 }
+
+.hidden{ 
+	display: none;
+}
+
+
+a:hover .hidden {
+	display : block;
+}
+

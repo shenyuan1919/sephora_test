@@ -5,7 +5,7 @@ if(!empty($products)){
 	?>
 
 		<div class="cell" >
-			<a href="<?php echo base_url(); ?>product/detail/<?=$product['id']?>">
+			<a href="<?php echo base_url(); ?>product/detail/<?=$product['id']?>" target="_blank">
 			<div class="callout " style="border: 0px;">
 				<div class="img_container">
 					<img src="<?=APIURL.$product['image']?>" alt="image of <?=$product['name']?>">
@@ -20,7 +20,7 @@ if(!empty($products)){
 				</div>
 
 				<p class="product-name"><?=$product['name']?></p>
-				<p class="product-desc"><?=$product['description']?></p>
+				<p class="product-desc">Category: <?=$product['category']?></p>
 				<p class="product-price-container">
 				<?php if($product['under_sale']){ ?>
 					<font class="product-old-price">$<?=number_format($product['price']/100, 2)?></font>
@@ -47,12 +47,4 @@ if(!empty($products)){
 ?>
 </div>
 <?php echo $this->ajax_pagination->create_links(); ?>
-<script>
-$(document).ready(function() {
-	$("a").on("click touchend", function(e) {
-		var el = $(this);
-		var link = el.attr("href");
-		window.location = link;
-	});
-});
-</script>
+

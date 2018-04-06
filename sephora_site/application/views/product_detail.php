@@ -6,6 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Buy Makeup, Cosmetics and Skincare | Sephora Singapore</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/> 
 	<meta content='Sephora, where beauty beats. Discover the best in makeup, skin care, and more from a wide selection of beauty brands. Free shipping for orders above S$40.' id='meta-description' name='description'>
 	<meta content='Sephora,Singapore,Beauty,Cosmetics,SkinCare,FreeDelivery' id='meta-keywords' name='keywords'>
 	
@@ -17,23 +18,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <article class="grid-container">
 	<div class="grid-x grid-padding-x">
-
-		<div class="medium-3 small-12 cell" style="margin-top:20px;margin-bottom:20px;">
-			<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>images/logo.svg" alt="Logo image"></a>
+		<div class="medium-3 small-12 cell" style="margin-top:20px;">
+			<a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>images/happylogo.png"></a>
 		</div>
-
 	</div>
 	<div class="grid-x grid-padding-x">
 
-		<div class="medium-5 small-6 cell" style="margin-top:20px;">
+		<div class="medium-5 small-12 cell" style="margin-top:20px;">
 			<img src="<?=APIURL.$product['image']?>" alt="image of <?=$product['name']?>">
 		</div>
 
-		<div class="medium-7 small-6 cell" style="margin-top:20px;">
+		<div class="medium-7 small-12 cell" style="margin-top:20px;">
 			<div class="grid-x grid-padding-x" >
-				<div class="medium-12 small-6 cell">
+				<div class="medium-12 small-12 cell">
 					<div class="product-detail-name"><?=$product['name']?></div>
-					<div class="product-detail-description"><?=$product['description']?></div>
+					<div class="product-detail-description">Category: <?=$product['category']?></div>
 					<div class="rateit-range" style="width: 60px; height: 12px;">
 						<div class="rateit-selected rateit-preset" style="height: 12px; width: <?=number_format($product['rating']/5*60, 0)?>px;"></div>
 					</div>
@@ -47,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php }?>									
 					</p>
 					<div class="callout" style="margin-top:20px;">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p><?=$product['description']?></p>
 					</div>
 					<p style="font-size:14px;font-height:10px;">
 						Free Shipping above $40.00<br>

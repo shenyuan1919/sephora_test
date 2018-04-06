@@ -2,8 +2,8 @@
 class db{
 	// Properties
 	private $dbhost = 'localhost';
-	private $dbuser = 'sephora_test';
-	private $dbpass = 'pcXp6&85';
+	private $dbuser = 'root';
+	private $dbpass = '';
 	private $dbname = 'sephora_app';
 	
 	public function connect() {

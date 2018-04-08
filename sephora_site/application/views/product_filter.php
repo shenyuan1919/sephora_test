@@ -9,6 +9,7 @@ if(!empty($products)){
 			<div class="callout " style="border: 0px;">
 				<div class="img_container">
 					<img src="<?=APIURL.$product['image']?>" alt="image of <?=$product['name']?>">
+					<div class="fav_heart hidden"></div>
 					<?php
 					if($product['sold_out']){
 						echo "<div class=\"imgtext_centered out-of-stock\">Out Of Stock</div>";

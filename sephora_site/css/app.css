@@ -13,6 +13,17 @@
 	padding: 10px 30px; 
 }
 
+.fav_heart{
+	background: url('../images/heart.svg');
+	position: absolute;
+    top: 0;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+}
+
+
 /* Bottom left text */
 .bottom-centered {
 	position: absolute;
